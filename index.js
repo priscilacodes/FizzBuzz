@@ -1,3 +1,9 @@
+document.querySelector("button").addEventListener("click",handleClick);
+
+
+function handleClick() {
+  
+
 var randomNumber1 = Math.floor(Math.random() * 6) + 1; // dice has 6 sides - "+1" para evitar o 0 - math.floor adicionado para arrendondar o numero
 
 var randomDiceImage = "dice" + randomNumber1 + ".png"; // dice1.png to dice6.png
@@ -32,4 +38,6 @@ else if (randomNumber2 > randomNumber1) {
 }
 else {
   document.querySelector("h1").innerHTML = "Draw!!";
+}
+
 }
